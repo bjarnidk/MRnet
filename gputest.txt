@@ -1,0 +1,10 @@
+import torch
+
+a = torch.cuda.FloatTensor(10000)
+print(“Allocated:”, round(torch.cuda.memory_allocated(0)/10243,1), “GB”)
+
+b = torch.cuda.FloatTensor(20000)
+print(“Allocated:”, round(torch.cuda.memory_allocated(0)/10243,1), “GB”)
+
+Allocated: 22595.4 GB
+Allocated: 22595.4 GB
